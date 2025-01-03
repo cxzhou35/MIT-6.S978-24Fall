@@ -92,6 +92,12 @@ We want the decomposed distributions to be represented by "similar" neural netwo
 - shared architectures, shared weights, ...
 - with an induced decomposition, indeced order.
 
+> [知乎的解读](https://zhuanlan.zhihu.com/p/531684586)：
+> 归纳偏置可以理解为，从现实生活中观察到的现象中归纳出一定的规则（heuristics），然后对模型做一定的约束，从而起到“模型选择”的作用，即从假设空间中选择出更符合现实规则的模型。神经网络中各式各样的网络结构/组件/机制往往就来源于归纳偏置。
+> inductive bias是关于求解目标函数的必要假设。
+> CNN的inductive bias应该是locality和spatial invariance，即空间相近的grid elements有联系，比较远的则没有联系，以及空间不变性（kernel权重共享）
+> RNN的inductive bias是sequentiality和time invariance，即序列顺序上的timesteps有联系，以及时间变换的不变性（rnn权重共享）
+
 ### Training: Teacher-Forcing
 
 由于autogressive model的特性，如果根据inference graph来训练是不切实际的，计算量和复杂度非常高
