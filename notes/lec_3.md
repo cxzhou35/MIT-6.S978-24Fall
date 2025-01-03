@@ -1,9 +1,22 @@
 # Autoregressive Models
 
-[slide link](https://mit-6s978.github.io/assets/pdfs/lec2_ar.pdf)
+[slide link](https://mit-6s978.github.io/assets/pdfs/lec3_ar.pdf)
 
 ## ToC
 
+<!--toc:start-->
+- [Autoregressive Models](#autoregressive-models)
+  - [ToC](#toc)
+  - [Conditional Distribution Modeling](#conditional-distribution-modeling)
+    - [Joint Distribution Modeling](#joint-distribution-modeling)
+    - [Chain rule](#chain-rule)
+    - [Dependency Graphs](#dependency-graphs)
+  - [Autoregressive Model](#autoregressive-model)
+    - [Inductive Bias](#inductive-bias)
+    - [Training: Teacher-Forcing](#training-teacher-forcing)
+  - [Network Architectures for AR models](#network-architectures-for-ar-models)
+    - [Autoregression w/ Shared Computation](#autoregression-w-shared-computation)
+<!--toc:end-->
 
 ## Conditional Distribution Modeling
 
@@ -43,7 +56,7 @@ Modeling each conditional distribution with a neural network
 
 ![2025-01-02-18-58-14](assets/img/2025-01-02-18-58-14.png)
 
-## Autoregressive Models
+## Autoregressive Model
 
 Auto + Regression
 - Auto: "self"
